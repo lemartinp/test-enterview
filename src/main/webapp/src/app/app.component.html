@@ -1,0 +1,23 @@
+<div class="example-container main">
+  <h2>Formulario de Prueba!</h2>
+  <mat-form-field appearance="fill" class="form" >
+    <mat-label>Numero de Documento</mat-label>
+    <input matInput type="number" [(ngModel)]="idNumber">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill" class="form" >
+    <mat-label>Nombre</mat-label>
+    <input matInput type="text" [(ngModel)]="name">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill" class="form" >
+    <mat-label>Valor</mat-label>
+    <input matInput type="number" [(ngModel)]="value">
+  </mat-form-field>
+  <br>
+  <button mat-button (click)="create()">Crear cuenta</button>
+  <button mat-button (click)="deposit()">Consignar cuenta</button>
+  <button mat-button (click)="withdraw()">Retirar cuenta</button>
+  <button mat-button (click)="check()">Consultar cuenta</button>
+
+</div>
